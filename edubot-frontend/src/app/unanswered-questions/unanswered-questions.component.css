@@ -1,0 +1,36 @@
+.body {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    justify-content: center;
+}
+
+.body .content {
+    text-align: center;
+}
+
+.menu-component {
+    height: 100vh;
+    background-color: rgb(62, 62, 62);
+}
+
+.content p {
+    font-size: x-large;
+    padding: 10px 0px;
+    color: rgb(60, 60, 60);
+    background-color: rgb(155, 155, 155);
+}
+
+.heading {
+    font-size: xx-large;
+    color: rgb(60, 60, 60);
+    margin: 35px 0px;
+}
+
+.mat-elevation-z0 {
+    box-shadow: 5px blue;
+}
+
+.table {
+    margin: 0 auto;
+    width: 95%;
+}

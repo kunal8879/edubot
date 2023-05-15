@@ -1,0 +1,29 @@
+<div class="login-page">
+    <p>Admin Login</p>
+    <div class="wrong" *ngIf="wrong">
+        <p>Username and Password combination is incorrect.</p>
+    </div>
+    <form #loginForm="ngForm" (ngSubmit)="submit(loginForm)">
+        <div class="example-container">
+            <mat-form-field class="input" appearance="outline">
+                <mat-label>Enter your username</mat-label>
+                <input matInput placeholder="username" FormControl="email" name="username" ngModel required>
+                <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+            </mat-form-field>
+
+            <br>
+
+            <mat-form-field class="input" appearance="outline">
+                <mat-label>Enter your password</mat-label>
+                <input matInput placeholder="password" [type]="hide ? 'password' : 'text'" name="password" ngModel>
+                <button type="button" mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'"
+                    [attr.aria-pressed]="hide">
+                    <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                </button>
+            </mat-form-field>
+        </div>
+        <section>
+            <button type="submit" mat-raised-button [disabled]="!loginForm.valid">Sign In</button>
+        </section>
+    </form>
+</div>

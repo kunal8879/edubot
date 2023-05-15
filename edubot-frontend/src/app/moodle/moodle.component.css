@@ -1,0 +1,247 @@
+.moodle-site {
+    height: 1000px;
+    margin-bottom: 100px;
+}
+
+.ls {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 10px 178px;
+}
+
+.ls .logo img {
+    width: 140px;
+}
+
+.ls .search input {
+    align-items: end;
+}
+
+.ls .search {
+    text-align: end;
+    margin: 15px 0px;
+    height: 30px;   
+}
+
+.nav {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.nav ul {
+    overflow: auto;
+    margin: 10px 0px;
+    border-radius: 10px;
+}
+
+.nav ul li {
+    float: left;
+    list-style: none;
+    padding: 15px 16px;
+    color: white;
+    background-color: rgb(59, 59, 59);
+}
+
+.nav ul button {
+    border: 0px;
+    text-align: center;
+    padding: 15px;
+    cursor: pointer;
+    color: white;
+    background-color: rgb(59, 59, 59);
+}
+
+.nav ul button a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav ul li:hover {
+    cursor: pointer;
+    background-color: rgb(195, 2, 2);
+}
+
+.nav ul button:hover {
+    background-color: rgb(195, 2, 2);
+}
+
+.moodle-site {
+    height: 1000px;
+    margin-bottom: 100px;
+}
+
+.content .img {
+    display: flex;
+    justify-content: center;
+    margin: 10px 150px;
+}
+
+.content .highlights {
+    display: flex;
+    justify-content: center;
+}
+
+.highlights .brief {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    max-width: 1170px;
+    margin: 20px 45px;
+    text-align: center;
+    border: 1px solid;
+    border-color: rgb(91, 91, 91);
+    border-radius: 10px;
+    box-shadow: 0 0 5px 5px rgb(200, 200, 200);
+    border-radius: 10px;
+}
+
+.highlights .brief .icon {
+    margin: 10px;
+}
+
+.highlights .brief .icon b {
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: large;
+    font-weight: 500;
+}
+
+.highlights .brief .icon img {
+    max-width: 200px;
+}
+
+.highlights .brief .icon p {
+    text-align: justify;
+}
+
+.content .info {
+    display: flex;
+    justify-content: center;
+}
+
+.info .about {
+    display: grid;
+    grid-template-columns: auto auto;
+    max-width: 1170px;
+    margin: 20px 45px;
+    text-align: center;
+    border: 1px solid;
+    border-color: rgb(91, 91, 91);
+    border-radius: 10px;
+    box-shadow: 0 0 5px 5px rgb(200, 200, 200);
+    border-radius: 10px;
+}
+
+.about .para {
+    margin-top: 40px;
+    max-width: 1100px;
+}
+
+.about .para .top {
+    margin: 25px 0px;
+    font-size: x-large;
+    font-weight: 600;
+    color: rgb(4, 98, 249);
+}
+
+.about .para .main {
+    margin: 20px;
+    text-align: justify;
+}
+
+hr.solid {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    border-top: 3px solid rgb(177, 177, 177);
+}
+
+
+.about .para .professors {
+    margin: 20px;
+    padding-left: 20px;
+}
+
+.about .para .professors ul li {
+    text-align: left;
+}
+
+.about .para .vision {
+    margin: 20px;
+}
+
+.about .para .mission {
+    margin: 20px;
+    padding: 0px 20px;
+}
+
+.about .para .mission ul {
+    list-style: decimal;
+    text-align: left;
+}
+
+.link .computer {
+    margin: 40px;
+    border: 1px solid;
+    border-color: black;
+    border-radius: 10px;
+}
+
+.link .department {
+    margin: 40px;
+    border: 1px solid;
+    border-color: black;
+    border-radius: 10px;
+}
+
+.link .header {
+    text-align: left;
+    font-weight: 500;
+    padding: 10px;
+    color: white;
+    background-color: rgb(59, 59, 59);
+    border-radius: 10px 10px 0px 0px;
+}
+
+.link .list {
+    margin: 0px 10px;
+    display: flex;
+    text-align: left;
+    justify-content: center;
+}
+
+.link .list ul {
+    padding: 10px;
+}
+
+.link .list ul li {
+    font-weight: bold;
+    list-style: none;
+    padding: 10px 0px;
+    color: black;
+    cursor: pointer;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.footer .credits {
+    max-width: 1170px;
+    padding: 20px 205px;
+    color: white;
+    background-color: rgb(59, 59, 59);
+    border: 1px solid;
+    border-radius: 10px;
+    box-shadow: 0 0 5px 5px rgb(200, 200, 200);
+}

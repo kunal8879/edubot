@@ -1,0 +1,40 @@
+<div class="chatbot">
+    <input type="checkbox" id="click">
+
+<label for="click">
+    <i class="fab fa-facebook-messenger"></i>
+    <i class="fas fa-times"></i>
+</label>
+<div class="wrapper">
+    <div class="head-text">
+        Let's chat? - Online
+    </div>
+
+    <div id="chat-box" class="chat-box">
+        <div class="messages">
+            <ng-container *ngFor="let message of messages">
+                <div matTooltip="{{message.time}}" matTooltipPosition="below" [matTooltipShowDelay]="showDelay.value" class="message from"
+                    *ngIf="message.author === 'bot'; else userMessage">
+                    {{ message.chat }}
+                </div>
+                <ng-template #userMessage>
+                    <div matTooltip="{{ message.time }}" [matTooltipShowDelay]="showDelay.value" class="message to"
+                        [ngClass]="{from: message.author === 'bot',to: message.author === 'user'}">
+                        {{ message.chat }}
+                    </div>
+                </ng-template>
+            </ng-container>
+            <div class="message from" *ngIf="isLoading">...</div>
+        </div>
+    </div>
+    <form class="input" action="#">
+        <input name="userMessage" id="userMessage" type="text" placeholder="Message" [(ngModel)]="value"
+            (keyup.enter)="sendMessage()" required>
+        <div class="button">
+            <button type="submit">
+                <i class="fa fa-paper-plane" (click)="sendMessage()"></i>
+            </button>
+        </div>
+    </form>
+</div>
+</div>

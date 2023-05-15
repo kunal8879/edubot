@@ -1,0 +1,187 @@
+.chatbot {
+    position: fixed;
+    bottom: 5px;
+    right: 20px;
+    z-index: 999;
+}
+#click {
+    display: none;
+}
+
+label {
+    z-index: 1000;
+    position: absolute;
+    right: 3px;
+    bottom: 3px;
+    height: 55px;
+    width: 55px;
+    background: -webkit-linear-gradient(left, #51e5a1, #407cf3);
+    text-align: center;
+    line-height: 55px;
+    border-radius: 50px;
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+}
+
+label i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.4s ease;
+}
+
+label i.fas {
+    opacity: 0;
+    pointer-events: none;
+}
+
+#click:checked~label i.fas {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translate(-50%, -50%) rotate(180deg);
+}
+
+#click:checked~label i.fab {
+    opacity: 0;
+    pointer-events: none;
+    transform: translate(-50%, -50%) rotate(180deg);
+}
+
+.wrapper {
+    z-index: 1000;
+    position: absolute;
+    bottom: -20rem;
+    right: 0px;
+    width: 475px;
+    height: 620px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.25);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+#click:checked~.wrapper {
+    opacity: 1;
+    bottom: 70px;
+    pointer-events: auto;
+}
+
+.wrapper .head-text {
+    line-height: 60px;
+    color: #fff;
+    border-radius: 15px 15px 0 0;
+    padding: 0 20px;
+    font-weight: 400;
+    font-size: 20px;
+    background: -webkit-linear-gradient(left, #51e5a1, #407cf3);
+}
+
+.wrapper .chat-box {
+    padding: 15px;
+    width: 100%;
+}
+
+.chat-box {
+    min-height: 475px;
+    min-width: 400px;
+    height: 80%;
+    color: #515365;
+    line-height: 25px;
+    font-size: 17px;
+    font-weight: 500;
+    overflow-y: scroll;
+    transition: all 0.3s ease-in-out;
+}
+
+.chat-box::-webkit-scrollbar {
+    display: none;
+}
+
+.message {
+    z-index: 1000;
+    border-radius: 10px;
+    padding: 5px 10px 3px;
+    position: absolute;
+    font-size: 15px;
+    margin-bottom: 10px;
+    cursor: default;
+}
+
+.input {
+    position: sticky;
+    align-content: center;
+    margin: 8px auto 10px;
+    height: 45px;
+    width: 95%;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    font-size: 20px;
+    transition: all 0.3s ease;
+}
+
+form input {
+    height: 45px;
+    width: 89%;
+    padding-left: 10px;
+    border: 1px solid lightgrey;
+    outline: none;
+    border-radius: 10px;
+}
+form .button{
+    float: right;
+    height: 45px;
+    width: 9%;
+    border: 1px solid lightgrey;
+    outline: none;
+    border-radius: 10px;
+}
+
+form button {
+    float: right;
+    border: none;
+    border-radius: 10px;
+    width: max-content;
+    height: max-content;
+    outline: none;
+    cursor: pointer;
+    color: #fff;
+    font-size: 25px;
+    background: -webkit-linear-gradient(left, #51e5a1, #407cf3);
+}
+
+form button i {
+    padding: 10px;
+}
+
+.message {
+    border-radius: 10px;
+    padding: 5px 10px 3px;
+    position: relative;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.message.to {
+    text-align: left;
+    background-color:#2095FE;
+    color:#fff;
+    width: max-content;
+    max-width: 300px;
+    margin-left: 50%;
+    float: right;
+}
+
+.message.from {
+    text-align: left;
+    background-color:#E5E4E9;
+    color:#363636;
+    width: max-content;
+    max-width: 300px;
+    margin-right: 50%;
+    float: left;
+}

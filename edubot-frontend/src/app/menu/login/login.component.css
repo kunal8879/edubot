@@ -1,0 +1,45 @@
+.login-page {
+  text-align: center;
+  width: 500px;
+  /* margin: 50px auto;
+  margin-top: 100px; */
+  padding: 50px 0px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  border: 1px solid;
+  border-color: rgb(127, 127, 127);
+  box-shadow: 5px 5px 5px 5px rgb(124, 124, 124);
+}
+
+p {
+  margin-bottom: 50px;
+  font-size: xx-large;
+  font-weight: 500;
+}
+
+.input {
+  width: 250px;
+  margin: 10px 0px;
+}
+
+::placeholder { 
+  padding: 5px;
+}
+
+.example-container input {
+  border: 2px solid;
+  border-color: rgb(127, 127, 127) ;
+}
+
+section button {
+  margin-top: 10px;
+  height: 50px;
+}
+.wrong p {
+  text-align: center;
+  color: red;
+  font-size: medium;
+  font-weight: 100;
+}

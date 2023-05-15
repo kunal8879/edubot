@@ -1,0 +1,10 @@
+.head {
+    position: fixed;
+    width: 1600px;
+    padding: 16px;
+    top: 0px;
+    color: white;
+    background-color: black;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}

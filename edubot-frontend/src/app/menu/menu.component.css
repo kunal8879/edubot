@@ -1,0 +1,29 @@
+.body .navbar {
+    width: max-content;
+    height: 750px;
+    position: relative;
+    color: white;
+    background-color: rgb(62, 62, 62);
+}
+
+.body {
+    position: fixed;
+    margin-top: 52px;
+}
+.navbar .head {
+    text-align: center;
+    font-size: x-large;
+    padding: 15px 0px;
+}
+
+.body .menu ul li {
+    cursor: pointer;
+    font-size: larger;
+    padding: 5px 0px;
+    margin: 0px 20px;
+}
+
+.body .menu ul li a {
+    text-decoration: none;
+    color: white;
+}
